@@ -1,22 +1,11 @@
 {
-  "name": "9week9-good-readme-generator",
+  "name": "static-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pattiqus/9Week9-good-readme-generator.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Pattiqus/9Week9-good-readme-generator/issues"
-  },
-  "homepage": "https://github.com/Pattiqus/9Week9-good-readme-generator#readme",
   "dependencies": {
     "inquirer": "^8.2.0"
   }
