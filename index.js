@@ -16,11 +16,6 @@ const questions = [
         name: 'description',
         message: 'Please enter a detailed description of your project'
     },
-    // {
-    //     type: 'input',
-    //     name: 'table of contents',
-    //     message: 'Table of Contents'
-    // },
     {
         type: 'input',
         name: 'installation',
