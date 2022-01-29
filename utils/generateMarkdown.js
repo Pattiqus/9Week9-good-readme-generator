@@ -1,5 +1,9 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+/**
+ * Function: renderLicenceBadge
+ * Description: Renders license badge based on user input (inquirer)
+ * @param {*} license 
+ * @returns 
+ */
 function renderLicenseBadge(license) {
   let licenseType = license;
   console.log(licenseType);
@@ -25,8 +29,12 @@ function renderLicenseBadge(license) {
   return badgeLicense;
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+/**
+ * Function: renderLicenceLink
+ * Description: renders hyperlink for license details based upon user input (inquirer).
+ * @param {*} license 
+ * @returns 
+ */
 function renderLicenseLink(license) {
   let licenseType = license;
   let linkLicense = '';
@@ -50,15 +58,13 @@ function renderLicenseLink(license) {
   return linkLicense;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//   renderLicenseBadge(badgeLicense);
-//   renderLicenseLink(linkLicense);
-// }
 
-// const license = renderLicenseSection.value;
-// TODO: Create a function to generate markdown for README
+/**
+ * Function: generateMarkdown
+ * Description: generates Markdown file from inquirier input
+ * @param {*} data 
+ * @returns 
+ */
 function generateMarkdown(data) {
   return `
   # ${data.title}
@@ -68,7 +74,7 @@ ${data.description}
 # Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [license](#license)
+* [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#tests)
@@ -84,7 +90,7 @@ Contributors: ${data.contributing}
 # Tests
 The following instructions should be followed for testing of this application: ${data.tests}
 # Questions
-If you have any qestions regrading the repository or the project please contact: GitHub: ${data.questionsGithub} Email: ${data.questionsEmail}
+If you have any qestions regrading the repository or the project please contact: <ul><li>GitHub:  <a href=https://github.com/${data.questionsGithub}>${data.questionsGithub}</a></li> <li>Email: <a href=mailto:${data.questionsEmail}>${data.questionsEmail}</a></li></ul>
 `;
 }
 
