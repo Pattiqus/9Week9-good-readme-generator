@@ -7,37 +7,71 @@ inquirer
     .prompt([
         {
             type: 'input',
-            name: 'title',
-            message: 'Please enter the title of your project'
+            name: 'Title',
+            message: 'Please enter the title of your project.'
 
         },
         {
             type: 'input',
-            name: 'description-motivation',
-            message: 'What was your motivation for this project?'
+            name: 'Description',
+            message: 'Please enter a detailed description of your project'
         },
         {
             type: 'input',
-            name: 'description-why',
-            message: 'Why did you create this project?'
+            name: 'Table of contents',
+            message: 'Table of Contents'
         },
         {
             type: 'input',
-            name: 'description-problem',
-            message: 'What problem does this project solve?'
+            name: 'Installation',
+            message: 'What else is the user required to install to run this application?'
         },
         {
             type: 'input',
-            name: 'description-problem',
-            message: 'What problem does this project solve?'
+            name: 'Usage',
+            message: 'Please leave some short & detailed instructions on how the user can use this application.'
         },
-
+        {
+            type: 'input',
+            name: 'Usage',
+            message: 'Please leave some instructions on how the user can use this application'
+        },
+        {
+            type: 'input',
+            name: 'Contributing',
+            message: 'Who contributed to this project?'
+        },
+        {
+            type: 'input',
+            name: 'Tests',
+            message: 'What commands are needed in order to test this application'
+        },
+        {
+            type: 'input',
+            name: 'Tests',
+            message: 'What commands are needed in order to test this application'
+        },
+        {
+            type: 'input',
+            name: 'Licence',
+            message: 'Which Licences are being used for this application?'
+        },
+        {
+            type: 'input',
+            name: 'Questions-github',
+            message: 'What is your GitHub username?'
+        },
+        {
+            type: 'input',
+            name: 'Questions-email',
+            message: 'What is your email?'
+        },
     ]);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize application
 function init() {}
 
 // Function call to initialize app
