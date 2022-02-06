@@ -79,16 +79,26 @@ ${data.description}
 * [Tests](#tests)
 * [Questions](#tests)
 # Installation
-The following dependencies are necessary to run this application: ${data.installation}
+The following dependencies are necessary to run this application: 
+
+\`\`\`${data.installation}\`\`\`
 # Usage
-In order to use this application please follow these instructions ${data.usage}
+In order to use this application please follow these instructions: 
+
+\`\`\`${data.usage}\`\`\`
 # License
 This project is licensed under: ${renderLicenseLink(data.license)}.
 
 # Contributing
-Contributors: ${data.contributing}
+Contributors: 
+
+\`\`\`
+${data.contributing}
+\`\`\`
 # Tests
-The following instructions should be followed for testing of this application: ${data.tests}
+The following instructions should be followed for testing of this application:
+
+\`\`\`${data.tests}\`\`\`
 # Questions
 If you have any qestions regrading the repository or the project please contact: <ul><li>GitHub:  <a href=https://github.com/${data.questionsGithub}>${data.questionsGithub}</a></li> <li>Email: <a href=mailto:${data.questionsEmail}>${data.questionsEmail}</a></li></ul>
 `;
